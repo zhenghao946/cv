@@ -1,0 +1,100 @@
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+  <script>
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+    }
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <div>
+    <nav class = "topnav">
+      <a href = "index.php">Home</a>
+      <a href = "#about_me">About</a>
+      <a href = "#courses">Projects</a>
+      <a href = "#contact">Contact</a>
+      <a href = "#enquiries">Feedbacks</a>
+    </nav>
+  </div>
+  <br>
+  <h1>Welcome</h1>
+  <div class = "center">
+    <p>Welcome to Zheng House! This is my first webiste where I learnt and researched a lot in order to complete it. Hope the website able to help you to understand more about me :P <br><br> Do feel free to create an account and drop down yr comment on this website.</p>
+  </div>
+  <br><br><br><br><br>
+  <h1 id = "about_me">About Me</h1>
+  <div class = "row">
+    <div class = "col-left">
+      <img class = "image" src = "Images/OwnPic.jpg" alt = "Potrait">
+    </div>
+    <div class = "col-right">
+      <p>Hi, my name is Liew Zheng Hao. I am currently a year 2 undergraduate student studying computer science. I have been passionate about computer science and being a software developer since I was young. I have read up a lot about C++ and Java, the direction I am having currently is to build up experience in developing desktop application and embedded systems.</p>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <h1 id = "courses">Past projects</h1>
+  <div class = "row">
+    <div class = "table">
+      <table id = "standardtable">
+        <tr>
+          <th>Merchant POS System</th>
+        </tr>
+        <tr>
+          <td>A comprehensive desktop system which includes features like billing, payment, generating various reports</td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Language used: Java</li>
+              <li>System works completely like any other in use POS system</li>
+              <li>This was the 3rd Java project done by me</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="table" width="30%">
+      <table id = "standardtable">
+        <tr>
+          <th>Scientific Calculator</th>
+        </tr>
+        <tr>
+          <td>An desktop application which includes scientific calculator features like log, ln, differentiation and integration</td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Language used: C++</li>
+              <li>System works completely fine until today and more features is being added on</li>
+              <li>This project was the Final Year Project (FYP)</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <h1 id = "contact">Contact</h1>
+  <div class = "row">
+    <div class = "table" width="20%">
+      <table >
+      <tr>
+        <td width="5%"><img class = "infoimage" src = "Images/linkedin.png"></td>
+        <td width="10%"><a href = "https://www.linkedin.com/in/zhenghaoliew/">Zheng Hao Liew</a></td>
+      </tr>
+      <tr valign = "middle">
+        <td><img class = "infoimage" src = "Images/email.png"></td>
+        <td><a href = "mailto:zhenghao.liew@aiesec.net">zhenghao.liew@aiesec.net</a></td>
+      </tr>
+      </table>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <h1 id = "enquiries">Feedbacks</h1>
